@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Comments</title>
+</head>
+<body>
+
+    <h2>Leave a Comment</h2>
+
+    <form>
+        <input type="text" id="comment">
+        <button type="button" onclick="addComment()">Submit</button>
+    </form>
+
+    <div id="comments"></div>
+
+    <script>
+function addComment() {
+    var comment = document.getElementById("comment").value;
+    document.getElementById("comments").innerHTML += comment + "<br>";
+}
+    </script>
+
+</body>
+</html>
